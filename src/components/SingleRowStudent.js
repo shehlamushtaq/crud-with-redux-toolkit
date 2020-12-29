@@ -11,13 +11,13 @@ const SingleRowStudent = () => {
         <Col>Iqtidar Ahmed</Col>
         <Col>0333-2326032</Col>
         <Col>
-          <Button variant="success" size="sm" className="mx-1 my-0">
+          <Button variant="success" size="xs" className="mx-1 my-0">
             Edit
           </Button>
-          <Button variant="danger" size="sm" className="mx-1 my-0">
+          <Button variant="danger" size="xs" className="mx-1 my-0">
             Delete
           </Button>
-          <Button variant="primary" size="sm" className="mx-1 my-0">
+          <Button variant="primary" size="xs" className="mx-1 my-0">
             View
           </Button>
         </Col>
