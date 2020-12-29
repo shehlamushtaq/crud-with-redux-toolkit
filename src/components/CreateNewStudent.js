@@ -14,7 +14,7 @@ const CreateNewStudent = () => {
               <label>Student Name</label>
             </Col>
             <Col>
-              <input type="text" className="input-100" />
+              <input type="text" className="input-100 my-1" />
             </Col>
           </Row>
           <Row>
@@ -22,7 +22,7 @@ const CreateNewStudent = () => {
               <label>Father Name</label>
             </Col>
             <Col>
-              <input type="text" className="input-100" />
+              <input type="text" className="input-100 my-1" />
             </Col>
           </Row>
           <Row>
@@ -30,7 +30,7 @@ const CreateNewStudent = () => {
               <label>Phone</label>
             </Col>
             <Col>
-              <input type="text" className="input-100" />
+              <input type="text" className="input-100 my-1" />
             </Col>
           </Row>
           <Row>
@@ -38,7 +38,7 @@ const CreateNewStudent = () => {
               <label>Address</label>
             </Col>
             <Col>
-              <input type="text" className="input-100" />
+              <input type="text" className="input-100 my-1" />
             </Col>
           </Row>
           <Row>
@@ -46,7 +46,7 @@ const CreateNewStudent = () => {
               <label>Age</label>
             </Col>
             <Col>
-              <input type="text" className="input-100" />
+              <input type="text" className="input-100 my-1" />
             </Col>
           </Row>
           <Row>
