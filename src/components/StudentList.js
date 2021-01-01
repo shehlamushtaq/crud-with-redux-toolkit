@@ -1,8 +1,11 @@
 import React from "react";
 import { ListGroup, Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import SingleRowStudent from "./SingleRowStudent";
-
+import { v4 as uuidv4 } from "uuid";
+import { useSelector, useDispatch } from "react-redux";
 const StudentList = () => {
+  const students1 = useSelector((state) => state.students);
   return (
     <Container className="body">
       <ListGroup>
@@ -18,9 +21,14 @@ const StudentList = () => {
             <Col>Actions</Col>
           </Row>
         </ListGroup.Item>
-        <SingleRowStudent />
-        <SingleRowStudent />
-        <SingleRowStudent />
+        {students1.map((item) => (
+          <SingleRowStudent
+            id={item.id}
+            name={item.name}
+            fname={item.fname}
+            phone={item.phone}
+          />
+        ))}
       </ListGroup>
     </Container>
   );
