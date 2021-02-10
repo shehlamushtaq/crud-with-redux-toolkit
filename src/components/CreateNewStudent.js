@@ -3,8 +3,10 @@ import { ListGroup, Container, Row, Col, Button } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
 import { addStudent } from "../store/StudentSlice";
+import {useHistory} from "react-router-dom";
 
 const CreateNewStudent = () => {
+  const history = useHistory();
   const dispatch = useDispatch();
   const [name, setName] = useState("");
   const [fname, setFName] = useState("");
@@ -27,6 +29,7 @@ const CreateNewStudent = () => {
     setPhone("");
     setAdres("");
     setAge("");
+    history.push("/");
   };
 
   return (
